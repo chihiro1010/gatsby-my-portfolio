@@ -12,10 +12,6 @@ module.exports = {
       options: {}
     },
     {
-      resolve: `@lekoarts/gatsby-theme-emilia-core`,
-      options: {}
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID
