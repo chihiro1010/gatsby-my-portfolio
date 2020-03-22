@@ -13,10 +13,9 @@ type Props = {
   title: string
   areas: string[]
   description?: string
-  date: string
 }
 
-const HeaderProject = ({ title, areas, description, date }: Props) => {
+const HeaderProject = ({ title, areas, description }: Props) => {
   const { name } = useEmiliaConfig()
   const avatar = useStaticQuery(graphql`
     query {
@@ -85,7 +84,6 @@ const HeaderProject = ({ title, areas, description, date }: Props) => {
             <Styled.h1>{title}</Styled.h1>
           </animated.div>
           <animated.div style={infoProps}>
-            <Styled.p sx={{ mb: 0, mt: 4 }}>{date}</Styled.p>
             <div>
               {areas.map((area, index) => (
                 <React.Fragment key={area}>

@@ -13,7 +13,6 @@ type Props = {
     project: {
       body: string
       excerpt: string
-      date: string
       slug: string
       title: string
       areas: string[]
@@ -68,7 +67,7 @@ const Project = ({ data: { project, images }, pageContext: { prev, next } }: Pro
         pathname={project.slug}
         image={project.cover.childImageSharp.resize!.src}
       />
-      <HeaderProject title={project.title} description={project.body} areas={project.areas} date={project.date} />
+      <HeaderProject title={project.title} description={project.body} areas={project.areas} />
       <Container sx={{ mt: [`-6rem`, `-6rem`, `-8rem`] }}>
         {images.nodes.map(image => (
           <animated.div key={image.name} style={imageFade}>
