@@ -13,7 +13,7 @@ const HeaderBackground = () => {
         sx={{
           position: `absolute`,
           top: 0,
-          left: 50,
+          left: 70,
           right: 0,
           bottom: 0,
           width: `100%`,
